@@ -1,0 +1,144 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(36, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(36, 0, 0, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  .box {
+    position: relative;
+    margin: auto;
+    margin-top: 7rem;
+    background-color: #fff;
+    width: 60%;
+    height: 80vh;
+
+    .input-box {
+      display: flex;
+      width: 85%;
+      height: 15%;
+      margin: auto;
+      justify-content: space-between;
+
+      #input-box-id {
+        background-color: #fff;
+        width: 75%;
+        height: 4rem;
+        margin-top: 2.5rem;
+        border: 1px solid #333;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        box-shadow: none;
+        outline: 0;
+      }
+
+      #add-Btn {
+        width: 10%;
+        height: 4rem;
+        margin-top: 2.5rem;
+        cursor: pointer;
+        color: #fff;
+        background-color: #2bc5da;
+        border: none;
+        outline: 0;
+        transition: ease 0.8s;
+      }
+
+      #add-Btn:hover {
+        background-color: #333;
+        transition: ease 0.8s;
+      }
+
+      #delete-Btn {
+        width: 10%;
+        height: 4rem;
+        margin-top: 2.5rem;
+        cursor: pointer;
+        color: #fff;
+        background-color: #c10800;
+        border: none;
+        outline: 0;
+        transition: ease 0.8s;
+      }
+
+      #delete-Btn:hover {
+        background-color: #3a0202;
+        transition: ease 0.8s;
+      }
+    }
+
+    .children-li {
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+      height: 75%;
+      margin: auto;
+      margin-top: 2rem;
+
+      .task-list {
+        display: flex;
+        background: #a8a8a8;
+        width: 100%;
+        height: 10%;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          font-size: 3rem;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        width: 100%;
+        height: 90%;
+
+        .all-lists {
+          display: flex;
+          background-color: #c8c8c8;
+          box-sizing: border-box;
+          width: 100%;
+          height: 15%;
+          border: none;
+          box-shadow: none;
+          outline: 0;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 1.5rem;
+          padding-left: 1rem;
+
+          button {
+            width: 5%;
+            height: 100%;
+            border: none;
+            cursor: pointer;
+            background-color: #c8c8c8;
+            outline: 0;
+
+            i{
+              align-content: flex-end;
+            }
+
+            i:hover{
+                color: #c10800;
+                font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

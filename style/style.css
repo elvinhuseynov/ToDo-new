@@ -1,0 +1,176 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #240000;
+  background: -webkit-gradient(linear, left top, right top, from(#240000), to(#00d4ff));
+  background: linear-gradient(90deg, #240000 0%, #00d4ff 100%);
+}
+
+body .box {
+  position: relative;
+  margin: auto;
+  margin-top: 7rem;
+  background-color: #fff;
+  width: 60%;
+  height: 80vh;
+}
+
+body .box .input-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  height: 15%;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .box .input-box #input-box-id {
+  background-color: #fff;
+  width: 75%;
+  height: 4rem;
+  margin-top: 2.5rem;
+  border: 1px solid #333;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+}
+
+body .box .input-box #add-Btn {
+  width: 10%;
+  height: 4rem;
+  margin-top: 2.5rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: #2bc5da;
+  border: none;
+  outline: 0;
+  -webkit-transition: ease 0.8s;
+  transition: ease 0.8s;
+}
+
+body .box .input-box #add-Btn:hover {
+  background-color: #333;
+  -webkit-transition: ease 0.8s;
+  transition: ease 0.8s;
+}
+
+body .box .input-box #delete-Btn {
+  width: 10%;
+  height: 4rem;
+  margin-top: 2.5rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: #c10800;
+  border: none;
+  outline: 0;
+  -webkit-transition: ease 0.8s;
+  transition: ease 0.8s;
+}
+
+body .box .input-box #delete-Btn:hover {
+  background-color: #3a0202;
+  -webkit-transition: ease 0.8s;
+  transition: ease 0.8s;
+}
+
+body .box .children-li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 85%;
+  height: 75%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+body .box .children-li .task-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #a8a8a8;
+  width: 100%;
+  height: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .box .children-li .task-list span {
+  font-size: 3rem;
+}
+
+body .box .children-li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  width: 100%;
+  height: 90%;
+}
+
+body .box .children-li ul .all-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #c8c8c8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 15%;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+body .box .children-li ul .all-lists button {
+  width: 5%;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  background-color: #c8c8c8;
+  outline: 0;
+}
+
+body .box .children-li ul .all-lists button i {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+body .box .children-li ul .all-lists button i:hover {
+  color: #c10800;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
