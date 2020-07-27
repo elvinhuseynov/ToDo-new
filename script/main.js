@@ -11,9 +11,10 @@ function eventListeners() {
   addItem.addEventListener("click", addNewItem);
 
   //delete item
-  deleteItem.addEventListener("click", deleteItemSelf);
+  taskListUl.addEventListener("click" , deleteItemSelf);
 
-  
+  //delete all
+  deleteAll.addEventListener("click" , deleteAllComponents);
 }
 
 function addNewItem(e) {
@@ -21,7 +22,11 @@ function addNewItem(e) {
     alert("Empty!");
   }
 
-  if (input.value !== "") {
+  if (taskListUl.childElementCount == 6) {
+    alert("List is full!");
+  }
+
+  if (input.value !== "" && taskListUl.childElementCount != 6) {
     //create child li
     const li = document.createElement("li");
     li.className = "all-lists";
@@ -48,8 +53,15 @@ function addNewItem(e) {
 
 function deleteItemSelf(e) {
   if (e.target.className === "fa fa-times" && confirm("Are you sure") == true) {
-
     console.log("test");
     e.target.parentElement.parentElement.remove();
+  }
+}
+
+function deleteAllComponents() {
+  if (confirm("Are you sure?")) {
+    while (taskListUl.childElementCount > 0) {
+      taskListUl.firstChild.remove();
+    }
   }
 }
